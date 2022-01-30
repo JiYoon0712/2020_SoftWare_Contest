@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cookandroid.mybook">
+
+    <application
+        android:label="@string/app_name">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name = "android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!--일기쓰기-->
+        <activity android:name=".WriteDiaryActivity">
+        </activity>
+
+        <!--일기보기-->
+        <activity android:name=".ShowMyData"
+            tools:ignore="WrongManifestParent">
+        </activity>
+
+        <!--일기 수정하기-->
+        <activity android:name=".ModifyMyData"
+            tools:ignore="WrongManifestParent">
+        </activity>
+
+        <!--앱 도움말 Activity-->
+        <activity android:name=".AppHelpActivity"
+            tools:ignore="WrongManifestParent">
+        </activity>
+    </application>
+</manifest>

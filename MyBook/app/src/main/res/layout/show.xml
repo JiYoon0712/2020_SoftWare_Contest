@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 책 제목 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DCD3D0"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:text="책 제목 : "
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+    <!-- 독후감 내용 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="396dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:text="( 독후감 내용 )"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="fill_parent"
+            android:layout_height="400dp"
+            android:layout_marginLeft="18dp"
+            android:orientation="vertical"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp">
+
+        <!-- 저장버튼 -->
+        <Button
+            android:id="@+id/bprevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="previousData"
+            android:background="#DCD3D0"
+            android:text="이전" />
+
+        <!-- 저장버튼 -->
+        <Button
+            android:id="@+id/bnext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="nextData"
+            android:background="#DCD3D0"
+            android:layout_marginLeft="5dp"
+            android:text="다음" />
+
+        <!-- 삭제버튼 -->
+        <Button
+            android:id="@+id/bdelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="deleteData"
+            android:background="#DCD3D0"
+            android:layout_marginLeft="5dp"
+            android:text="삭제" />
+
+        <!-- 수정버튼 -->
+        <Button
+            android:id="@+id/bmodify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="modifyData"
+            android:background="#DCD3D0"
+            android:layout_marginLeft="5dp"
+            android:text="수정" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

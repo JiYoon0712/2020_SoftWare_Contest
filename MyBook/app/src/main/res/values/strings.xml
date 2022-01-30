@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyBook</string>
+    <string name="mbookname">책 제목</string>
+    <string name="mcontent">독후감 쓰기</string>
+</resources>
